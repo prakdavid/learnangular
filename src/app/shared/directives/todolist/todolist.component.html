@@ -1,0 +1,10 @@
+<p>todolist works!</p>
+
+<input type="text" (keyup.enter)="addItem()" #inputItem>
+<button class="btn btn-primary" (click)="addItem()">
+    <i class="fa fa-plus"></i>
+  </button>
+<ul>
+    <li *ngFor="let el of todoList">{{ el.text }}</li>
+</ul>
+LOL
